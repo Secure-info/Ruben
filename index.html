@@ -97,13 +97,28 @@
             .business-name {
                 font-size: 24px; /* Adjusted font size for smaller screens */
             }
-           img.headshot {
-            max-width: 100px; /* Reduced headshot size */
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            animation: rotate 0.4s linear forwards; /* Rotate animation */
-        }
+    img.headshot {
+    max-width: 100px; /* Default headshot size */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: rotate 0.4s linear forwards; /* Rotate animation */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    img.headshot {
+        max-width: 80px; /* Adjusted headshot size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    img.headshot {
+        max-width: 60px; /* Further adjusted headshot size for very small screens */
+    }
+}
+
             .position {
                 font-size: 16px; /* Adjusted font size for smaller screens */
             }
