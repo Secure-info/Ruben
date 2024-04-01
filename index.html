@@ -6,6 +6,29 @@
     <title>Ruben</title>
         <link rel="icon" type="image/png" href="RubenHeadshot.svg">
     <style>
+      img.headshot {
+    max-width: 50px; /* Default headshot size */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: rotate 0.4s linear forwards; /* Rotate animation */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjusted headshot size for smaller screens */
+    img.headshot {
+        max-width: 80px;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    /* Further adjusted headshot size for very small screens */
+    img.headshot {
+        max-width: 60px;
+    }
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,7 +38,7 @@
         }
 
         .container {
-            max-width: 90%;
+            max-width: 80%;
             margin: 18px auto;
             padding: 20px;
             background-color: #fffbe6; /* Gold container background */
@@ -98,44 +121,10 @@
             .business-name {
                 font-size: 24px; /* Adjusted font size for smaller screens */
             }
-/* Default styles for headshot image */
-img.headshot {
-    max-width: 50px; /* Default headshot size */
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    animation: rotate 0.4s linear forwards; /* Rotate animation */
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    /* Adjusted headshot size for smaller screens */
-    .headshot {
-        max-width: 80px;
-    }
-}
-
-/* Media query for even smaller screens */
-@media screen and (max-width: 480px) {
-    /* Further adjusted headshot size for very small screens */
-    .headshot {
-        max-width: 60px;
-    }
-}
             .position {
                 font-size: 16px; /* Adjusted font size for smaller screens */
             }
         }
-
-        img.logo {
-            width: 50%; /* Adjusted logo width */
-            max-width: 200px; /* Set maximum width */
-            height: auto; /* Maintain aspect ratio */
-            display: block;
-            margin: 0 auto 10px;
-            animation: bounce 0.5s ease; /* Bounce animation */
-        }
-
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
